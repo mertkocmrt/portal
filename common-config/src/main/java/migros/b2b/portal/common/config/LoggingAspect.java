@@ -17,13 +17,13 @@ public class LoggingAspect {
 
     private static final Logger LOG = LogManager.getLogger(LoggingAspect.class);
 
-    @After("execution(* readingisgood.retail.repositories.*.*(..))")
+    @After("execution(* migros.b2b.portal.order.repositories.*.*(..))")
     public void logGetOrder(JoinPoint point) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         LOG.info(point.getSignature().getName() + " called by " + auth.getName() + " at " + new Date());
     }
 
-    @AfterThrowing(value="execution(* readingisgood.retail.controllers.*.*(..))",
+    @AfterThrowing(value="execution(* migros.b2b.portal.order.controllers.*.*(..))",
             throwing="e")
     public void doRecoveryActions(JoinPoint point, Exception e) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();

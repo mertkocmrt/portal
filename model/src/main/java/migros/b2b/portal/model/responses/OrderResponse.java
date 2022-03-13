@@ -14,7 +14,6 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 public class OrderResponse {
-    String responseMessage;
 
     private String _id;
     @JsonFormat(pattern="dd/MM/yyyy")

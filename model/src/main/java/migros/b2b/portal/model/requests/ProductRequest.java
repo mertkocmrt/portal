@@ -14,6 +14,9 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Builder
 public class ProductRequest implements Serializable {
+
+    private String id;
+
     @Min(1)
     private Integer quantity;
     private String name;

@@ -4,8 +4,9 @@ import migros.b2b.portal.model.entities.Order;
 import migros.b2b.portal.model.requests.OrderRequest;
 import migros.b2b.portal.model.responses.OrderResponse;
 import migros.b2b.portal.order.mappers.OrderMapper;
-import migros.b2b.portal.order.repositories.OrderRepository;
+import migros.b2b.portal.order.repositories.IOrderRepository;
 import migros.b2b.portal.order.services.IOrderService;
+import migros.b2b.portal.product.service.IProductService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,10 +14,10 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class OrderService implements IOrderService {
     private final OrderMapper orderMapper;
-    private final OrderRepository orderRepository;
+    private final IOrderRepository orderRepository;
     private final IProductService productService;
 
-    public OrderService(OrderRepository orderRepository, IProductService productService, OrderMapper orderMapper) {
+    public OrderService(IOrderRepository orderRepository, IProductService productService, OrderMapper orderMapper) {
         this.orderRepository = orderRepository;
         this.orderMapper = orderMapper;
         this.productService = productService;

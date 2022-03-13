@@ -1,10 +1,11 @@
-package migros.b2b.portal.model.exceptions;
+package migros.b2b.portal.model.requests;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import migros.b2b.portal.model.exceptions.ProductRequest;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Future;

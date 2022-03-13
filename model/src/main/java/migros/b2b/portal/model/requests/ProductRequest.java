@@ -1,4 +1,4 @@
-package migros.b2b.portal.model.exceptions;
+package migros.b2b.portal.model.requests;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -20,6 +20,5 @@ public class OrderProduct {
     private String _id;
     private String name;
     private Integer quantity;
-    private String author;
     private BigDecimal price;
 }

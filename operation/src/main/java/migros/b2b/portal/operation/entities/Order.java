@@ -23,5 +23,5 @@ public class Order {
     private Date orderDate;
     private String customer;
     private String status;
-    private List<Product> products;
+    private List<OrderProduct> products;
 }

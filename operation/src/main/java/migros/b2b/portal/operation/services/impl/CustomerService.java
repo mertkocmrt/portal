@@ -5,9 +5,11 @@ import migros.b2b.portal.model.responses.CustomerOrdersResponse;
 import migros.b2b.portal.operation.entities.Customer;
 import migros.b2b.portal.operation.repositories.ICustomerRepository;
 import migros.b2b.portal.operation.services.ICustomerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Service
 public class CustomerService implements ICustomerService {
     private final ICustomerRepository customerRepository;
 

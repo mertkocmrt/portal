@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-
 @Aspect
 @Component
 public class LoggingAspect {

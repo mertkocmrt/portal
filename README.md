@@ -6,7 +6,8 @@ like
 
     -placing a new order 
     -list all orders of the customer 
-    -viewing the order details
+    -viewing the order details by cresteria
+    -cancel order
 
 Different technologies and tools were used to accomplish technical requirements.
 

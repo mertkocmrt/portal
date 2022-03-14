@@ -4,7 +4,6 @@ import migros.b2b.portal.model.exceptions.BaseException;
 import migros.b2b.portal.model.exceptions.EntityNotFoundException;
 import migros.b2b.portal.model.exceptions.NotEnoughStock;
 import migros.b2b.portal.model.responses.BaseResponse;
-import org.springframework.dao.DuplicateKeyException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

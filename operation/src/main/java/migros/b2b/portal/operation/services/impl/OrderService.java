@@ -80,8 +80,8 @@ public class OrderService implements IOrderService {
     @Override
     public void cancelOrder(String id) {
         orderRepository.deleteById(id);
+        //update stock
     }
-
 
     private void updateProducts(OrderRequest orderRequest) {
         productService.updateProducts(orderRequest.getProducts());

@@ -1,7 +1,6 @@
 package migros.b2b.portal.operation.services.impl;
 
 import migros.b2b.portal.model.exceptions.EntityNotFoundException;
-import migros.b2b.portal.model.responses.CustomerOrdersResponse;
 import migros.b2b.portal.operation.entities.Customer;
 import migros.b2b.portal.operation.repositories.ICustomerRepository;
 import migros.b2b.portal.operation.services.ICustomerService;

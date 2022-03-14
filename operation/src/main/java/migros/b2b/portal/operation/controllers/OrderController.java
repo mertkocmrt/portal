@@ -15,7 +15,7 @@ import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
 
-@RestController("/v1/orders")
+@RestController
 public class OrderController {
     IOrderService orderService;
 

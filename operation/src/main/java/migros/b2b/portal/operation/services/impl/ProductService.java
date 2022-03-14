@@ -25,11 +25,11 @@ public class ProductService implements IProductService {
 
     @Override
     public Product getProduct(String id) {
-        Optional<Product> returnedBook = productRepository.findById(id);
-        if(returnedBook.isEmpty()){
+        Optional<Product> returnedProduct = productRepository.findById(id);
+        if(returnedProduct.isEmpty()){
             throw new EntityNotFoundException();
         }
-        return returnedBook.get();
+        return returnedProduct.get();
     }
 
     @Override

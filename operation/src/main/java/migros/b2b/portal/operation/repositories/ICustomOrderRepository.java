@@ -1,6 +1,5 @@
 package migros.b2b.portal.operation.repositories;
 
-
 import migros.b2b.portal.operation.entities.Order;
 
 import java.text.ParseException;

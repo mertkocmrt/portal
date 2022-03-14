@@ -15,7 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document(collection = "Customers")
+@Document(collection = "customers")
 public class Customer {
     @Id
     private String email;

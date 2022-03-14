@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class OrderResponse {
+public class OrderResponse extends BaseResponse {
 
     private String _id;
     @JsonFormat(pattern="dd/MM/yyyy")

@@ -5,14 +5,15 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ProductResponse extends BaseResponse {
+public class CustomerOrdersResponse extends BaseResponse{
+    private String email;
     private String name;
-    private Integer quantity;
-    private BigDecimal price;
+    private String address;
+    private List<OrderResponse> orders;
 }

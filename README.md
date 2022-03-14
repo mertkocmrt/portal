@@ -1,5 +1,5 @@
-#Migros Portal Order API
-What I used
+# Migros Portal Order API
+
 It is a monolith Spring Boot project with Java 11. 
 There are different APIs to serve various purposes 
 like 
@@ -25,7 +25,7 @@ For example:
     - Lombok for to minimizing the boilerplate code
     - Junit and Mockito for testing
     
-#How to use
+# How to use
 
 First you need to clone
     git clone https://github.com/mertkocmrt/portal
@@ -38,7 +38,7 @@ or you can just run below command and enjoy your time
 
     java -jar target/portal.jar
     
-#Details and Assumptions
+# Details and Assumptions
 Since we don't have a front-end, you have to copy and paste id of document entries. For example you have to first add then copy the id from response object to retrieve the object with another endpoint.
 
 First endpoint you should call is /user with username and password to authorize and use other endpoints. And there is no actual login mechanism. That is why password is useless. BUT we are using username for logging.
@@ -46,4 +46,4 @@ First endpoint you should call is /user with username and password to authorize 
 Again you have to carry bearer token with copying and pasting to other secured endpoint requests.
 
 
-#BYE
+# BYE
